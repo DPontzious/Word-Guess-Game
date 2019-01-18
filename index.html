@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+
+</head>
+
+<body>
+    <h1>Letter Guess Game</h1>
+    <div class="container">
+        <h4>Try to guess what letter I am thinking! You only get 10 guesses so choose wisely!</h3>
+
+            <div class="row">
+                <div class="col">
+                    <h3>Wins</h3>
+                    <span id="wins"></span>
+                </div>
+                <div class="col">
+                    <h3>Losses</h3>
+                    <span id="losses"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Guesses Remaining...</p>
+                    <span id="remain"></span>
+                    </p>
+                </div>
+                <div class="col">
+                    <p>Letters Already Guessed</p>
+                    <span id="guess"></span>
+                </div>
+            </div>
+    </div>
+
+    <!-- <script type="text/javascript">
+        var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
+
+        var wins = 0;
+        var losses = 0;
+        var remainingGuess = 10;
+        var guessedLetters = [];
+
+        document.onkeyup = function (event) {
+            if (alphabet.indexOf(event.key.toLowerCase()) === -1) {
+                return;
+            }
+
+            var userGuess = event.key;
+            // console.log('userGuess', userGuess);
+            guessedLetters.push(userGuess);
+            // console.log('guessedLetters', guessedLetters);
+
+            var computerGuess = alphabet[Math.floor(Math.random() * alphabet.length)];
+
+            if (userGuess === computerGuess) {
+                wins++;
+                remainingGuess--;
+            }
+
+            if (userGuess !== computerGuess) {
+                remainingGuess--;
+            }
+
+            if (remainingGuess == 0) {
+                losses++;
+                guessedLetters = [];
+                remainingGuess = 10;
+            }
+
+            document.getElementById('wins').innerHTML = wins;
+            document.getElementById('losses').innerHTML = losses;
+            document.getElementById('remain').innerHTML = remainingGuess;
+            document.getElementById('guess').innerHTML = guessedLetters;
+
+        }
+
+
+
+    </script>
+    </div>
+
+
+</body>
+
+</html> -->

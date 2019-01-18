@@ -1,0 +1,19 @@
+body{
+    background: url(https://watermark.lovepik.com/photo/40012/1435.jpg_wh1200.jpg);
+    text-align: center;
+}
+h1{
+    text-align: center;
+    color: floralwhite;
+}
+.row{
+    margin: 10px;
+}
+
+.container{
+    background-color:#143669;
+    border: 5px solid black;
+    padding: 10px;
+    color: floralwhite;
+
+}
